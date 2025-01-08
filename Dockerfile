@@ -11,8 +11,8 @@ RUN npm install
 # Copie tous les fichiers dans l'image Docker
 COPY . .
 
-# Build et export de l'application Next.js
-RUN npm run build && npm run export
+# Build de l'application avec Vite
+RUN npm run build
 
 # Installe 'serve' pour servir les fichiers statiques
 RUN npm install -g serve
@@ -21,4 +21,4 @@ RUN npm install -g serve
 EXPOSE 3001
 
 # Commande pour démarrer le serveur statique avec 'serve'
-CMD ["serve", "-s", "out", "-l", "3002"]
+CMD ["serve", "-s", "dist", "-l", "3002"]
