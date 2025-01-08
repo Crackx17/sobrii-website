@@ -55,7 +55,7 @@ export default function App() {
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-            <PieChart className="w-12 h-12 mb-4 text-green-600" />
+            <PieChart className="w-12 h-12 mb-4 text-black-600" />
             <h3 className="text-2xl font-bold mb-4">40% Energy Waste</h3>
             <p className="text-gray-600">
               Current PC fleet management practices result in significant energy
@@ -63,7 +63,7 @@ export default function App() {
             </p>
           </div>
           <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-            <Monitor className="w-12 h-12 mb-4 text-green-600" />
+            <Monitor className="w-12 h-12 mb-4 text-black-600" />
             <h3 className="text-2xl font-bold mb-4">Hardware Lifespan</h3>
             <p className="text-gray-600">
               Improper power management leads to reduced hardware lifespan and
@@ -71,7 +71,7 @@ export default function App() {
             </p>
           </div>
           <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-            <Calculator className="w-12 h-12 mb-4 text-green-600" />
+            <Calculator className="w-12 h-12 mb-4 text-black-600" />
             <h3 className="text-2xl font-bold mb-4">Rising Costs</h3>
             <p className="text-gray-600">
               Increasing energy prices and hardware costs impact your bottom
@@ -94,15 +94,15 @@ export default function App() {
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-4 text-lg">
-                <Shield className="w-6 h-6 text-green-600" />
+                <Shield className="w-6 h-6 text-black-600" />
                 <span>Enterprise-grade security</span>
               </div>
               <div className="flex items-center gap-4 text-lg">
-                <Clock className="w-6 h-6 text-green-600" />
+                <Clock className="w-6 h-6 text-black-600" />
                 <span>24/7 monitoring & optimization</span>
               </div>
               <div className="flex items-center gap-4 text-lg">
-                <Zap className="w-6 h-6 text-green-600" />
+                <Zap className="w-6 h-6 text-black-600" />
                 <span>Instant deployment</span>
               </div>
             </div>
