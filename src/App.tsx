@@ -316,7 +316,7 @@ export default function App() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center mt-4">
               <div className="bg-white p-4 rounded-xl">
-                <div className="text-[#FF8B8B] text-xl sm:text-2xl font-bold">
+                <div className="text-black text-xl sm:text-2xl font-bold">
                   {(pcCount * 58.95).toLocaleString()} €
                 </div>
                 <div className="text-sm sm:text-base text-gray-600">
@@ -324,7 +324,7 @@ export default function App() {
                 </div>
               </div>
               <div className="bg-white p-4 rounded-xl">
-                <div className="text-[#7DDBB6] text-xl sm:text-2xl font-bold">
+                <div className="text-black text-xl sm:text-2xl font-bold">
                   {(pcCount * 0.023).toLocaleString()}
                 </div>
                 <div className="text-sm sm:text-base text-gray-600">
@@ -332,7 +332,7 @@ export default function App() {
                 </div>
               </div>
               <div className="bg-white p-4 rounded-xl">
-                <div className="text-[#8B9EFF] text-xl sm:text-2xl font-bold">2y</div>
+                <div className="text-black] text-xl sm:text-2xl font-bold">2y</div>
                 <div className="text-sm sm:text-base text-gray-600">
                   Prolongation de durée de vie
                 </div>
@@ -349,41 +349,62 @@ export default function App() {
       Tarification simple
     </h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-      <div className="bg-white rounded-3xl p-4 sm:p-6 shadow-xl">
-        <h3 className="text-xl sm:text-2xl font-bold mb-4 text-center">
-          Licence Annuelle
-        </h3>
-        <div className="text-center">
+      {/* Licence Annuelle */}
+      <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col">
+        <div className="text-center mb-6">
+          <h3 className="text-xl sm:text-2xl font-bold mb-2">
+            Licence Annuelle
+          </h3>
+          <p className="text-sm sm:text-base text-gray-600">
+            Renouvellement annuel
+          </p>
+        </div>
+        <div className="flex-1 flex flex-col items-center justify-center border-2 border-black rounded-2xl">
           <div className="text-4xl sm:text-6xl font-bold">12€</div>
-          <div className="text-sm sm:text-base text-gray-600 mt-2">
+          <div className="text-sm sm:text-base text-gray-600 mt-3">
             par PC/an
           </div>
         </div>
       </div>
-      <div className="bg-white rounded-3xl p-4 sm:p-6 shadow-xl">
-        <h3 className="text-xl sm:text-2xl font-bold mb-4 text-center">
-          Licence Perpétuelle
-        </h3>
-        <div className="space-y-4">
-          <div className="flex justify-between">
-            <span className="font-semibold">Moins d'1 an</span>
-            <span className="text-xl sm:text-3xl font-bold">48€</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="font-semibold">1-2 ans</span>
-            <span className="text-xl sm:text-3xl font-bold">36€</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="font-semibold">2-3 ans</span>
-            <span className="text-xl sm:text-3xl font-bold">24€</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="font-semibold">4+ ans</span>
-            <span className="text-xl sm:text-3xl font-bold">12€</span>
+
+      {/* Licence Perpétuelle */}
+      <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col">
+        <div className="text-center mb-6">
+          <h3 className="text-xl sm:text-2xl font-bold mb-2">
+            Licence Perpétuelle
+          </h3>
+          <p className="text-sm sm:text-base text-gray-600">
+            Paiement unique selon l'âge du PC
+          </p>
+        </div>
+        <div className="flex-1 border-2 border-black rounded-2xl p-6 sm:p-8 flex flex-col justify-center">
+          <div className="space-y-4">
+            <div className="flex justify-between items-center">
+              <span className="font-semibold text-sm sm:text-base">
+                Moins d'1 an
+              </span>
+              <span className="text-2xl sm:text-3xl font-bold">48€</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <span className="font-semibold text-sm sm:text-base">1-2 ans</span>
+              <span className="text-2xl sm:text-3xl font-bold">36€</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <span className="font-semibold text-sm sm:text-base">2-3 ans</span>
+              <span className="text-2xl sm:text-3xl font-bold">24€</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <span className="font-semibold text-sm sm:text-base">4+ ans</span>
+              <span className="text-2xl sm:text-3xl font-bold">12€</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <p className="text-center text-gray-600 mt-6">
+      Tous les prix sont hors TVA. Remises sur volume disponibles.
+    </p>
   </div>
 </Section>
 
